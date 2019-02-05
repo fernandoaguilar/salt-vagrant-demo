@@ -13,7 +13,7 @@ already be installed.
 
 .. code-block:: bash
 
-    git clone https://github.com/UtahDave/salt-vagrant-demo.git
+    git clone https://github.com/fernandoaguilar/salt-vagrant-demo.git
     cd salt-vagrant-demo
     vagrant plugin install vagrant-vbguest
     vagrant up
@@ -32,4 +32,6 @@ using Salt.
 .. code-block:: bash
 
     vagrant ssh master
-    sudo salt \* test.ping
+    sudo su 
+    salt '*' state.apply
+
